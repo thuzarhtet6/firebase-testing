@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css"> -->
+</head>
+<body>
+    <div class="container">
+       <div class="first_box">
+        <label for="name">First Name</label>
+        <input type="text" name="name" id="name" placeholder="Your name">
+       </div>
+       <div class="second_box">
+        <label for="gender">Gender</label>
+        <select name="" id="gender">
+            <option value="gender">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+       </div>
+       <div class="third_box">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Your Age">
+       </div>
+       <div class="fourth_box">
+            <label for="profile">Profile Image</label>
+            <input type="file" id="profile">
+       </div>
+       <div class="fifth_box">
+            <label for="country">Country</label>
+            <select name="" id="">
+                <option value="Country">Select Country</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Canada">Canada</option>
+            </select>
+       </div>
+       <button type="submit">Submit</button>
+    </div>
+
+    <table>
+        <tr>
+            <th>Profile</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Country</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://pics.craiyon.com/2023-10-23/903eec12f88642079733f99cf3e1eb17.webp" alt="">
+            </td>
+            <td>Yan Myo Aung</td>
+            <td>Male</td>
+            <td>22</td>
+            <td>Thailand</td>
+            <td>Delete</td>
+            <td>Update</td>
+
+        </tr>
+        <tr>
+            <td>
+                <img src="https://storage.googleapis.com/pod_public/1300/173932.jpg" alt="">
+            </td>
+            <td>Hello World</td>
+            <td>Male</td>
+            <td>31</td>
+            <td>Canada</td>
+            <td>Delete</td>
+            <td>Update</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://img.freepik.com/premium-photo/close-up-cartoon-girl-with-backpack-hat-generative-ai_974539-26968.jpg" alt="">
+            </td>
+            <td>Wai Wai</td>
+            <td>Female</td>
+            <td>20</td>
+            <td>Australia</td>
+            <td>Delete</td>
+            <td>Update</td>
+        </tr>
+
+    </table>
+    <script src="./index.js"></script>
+</body>
+</html>

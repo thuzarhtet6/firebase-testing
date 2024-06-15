@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const newData = [];
+      let promise = fetch("https://jsonplaceholder.typicode.com/photos/1").then(
+        (response) => response.json()
+      );
+
+      promise.then( data => {
+        newData.push(data.id);
+        newData.push(data.title);
+        newData.push(data.thumbnailUrl);
+        console.log(newData);
+      })
+      .catch(() => console.error("error found fetching data"))
+      .finally(()=> console.log("Process Done"));
+
+      console.log(newData);
+    </script>
+  </body>
+</html>
